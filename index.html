@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin sinh viên</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80px;
+            width: 100%;
+            overflow: hidden;
+        }
+        .header img {
+            height: 100%;
+            width: auto;
+            object-fit: cover;
+        }
+        .content {
+            background-color: white;
+            margin: 30px auto;
+            padding: 20px;
+            width: 60%;
+            max-width: 800px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .content .header-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 20px;
+        }
+        .content .header-info .avatar {
+            width: 100px;
+            height: 100px;
+            background-color: #f0f0f0;
+            border-radius: 50%;
+            border: 2px solid #ddd;
+            margin-bottom: 20px; /* Khoảng cách giữa avatar và thông tin */
+            margin-right: 650px; 
+        }
+        .content .header-info .info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 800px;
+            padding-bottom: 20px;
+            margin-bottom: 10px;
+            border-bottom: 0.2px solid #e9e3e3;
+        }
+        
+        .content .header-info .info div {
+            margin: 0 5px;
+        }
+        .content .header-info .info h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .content .header-info .info p {
+            margin: 0;
+        }
+        .content .header-info .button-wrapper {
+            margin-left: auto; /* Đẩy nút sang bên phải */
+        }
+        .content .info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 10px; /* Khoảng cách giữa các ô */
+            width: 100%;
+            max-width: 800px;
+        }
+        .footer {
+            background-color: #312a58;
+            color: white;
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+        }
+        .button {
+            background-color: #e00;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .button:hover {
+            background-color: #b00;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="menu.jpg" alt="Logo Văn Lang">
+    </div>
+
+    <div class="content">
+        <div class="header-info">
+            <div class="avatar"></div>
+            <div class="info">
+                <div class="text-info">
+                    <h1 style="font-size: 30px; font-weight: 700; color: #999696;">Nguyễn Lê Nhất Sinh</h1>
+                </div>
+                <p style="font-size: 25px; font-weight: 50; color: #bdb9b9;">MSSV: 207TC47074</p>
+                <div class="button-wrapper">
+                    <a href="#" class="button">Quay lại trang tra cứu</a>
+                </div>
+            </div>
+        </div>
+        <div class="info">
+            <div style="color:#bdb9b9;"><span style="color:#bdb9b9;">Ngày sinh:</span> 04/25/2000</div>
+            <div style="color:#8f8d8d; font-weight: 700;"><span style="color:#bdb9b9; font-weight: 100;">Giới tính:</span> Nữ</div>
+
+            <div style="color:#8f8d8d; font-weight: 700;"><span style="color:#bdb9b9; font-weight: 100;">Ngành:</span> Tài Chính - Ngân Hàng</div>
+            <div style="color:#8f8d8d; font-weight: 700;"><span style="color:#bdb9b9; font-weight: 100;">Xếp loại tốt nghiệp:</span> Khá</div>
+
+            <div style="color:#8f8d8d; font-weight: 700;"><span style="color:#bdb9b9; font-weight: 100;">Số văn bằng:</span> VL-6BA003573</div>
+            <div style="color:#8f8d8d; font-weight: 700;"><span style="color:#bdb9b9; font-weight: 100;">Số vào sổ gốc cấp văn bằng:</span> 6B.03410.24</div>
+
+            <div style="color:#8f8d8d; font-weight: 700;"><span style="color:#bdb9b9; font-weight: 100;">Quyết định:</span> 1109/QĐ-DHVL-ĐT</div>
+            <div style="color:#8f8d8d; font-weight: 700;"><span style="color:#bdb9b9; font-weight: 100;">Ngày ký:</span> 14/7/2024</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <img src="cuoi.jpg" alt="Logo Văn Lang">
+    </div>
+
+</body>
+</html>
