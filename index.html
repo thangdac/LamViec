@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thông tin sinh viên</title>
+    <link rel="shortcut icon" type="image/png" href="/logo van lang.png"/>
+    <title>Tra cứu văn bằng - VLU</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -29,7 +30,7 @@
             background-color: white;
             margin: 30px auto;
             padding: 20px;
-            width: 60%;
+            width: 90%; /* Điều chỉnh cho màn hình nhỏ hơn */
             max-width: 800px;
             text-align: left;
             display: flex;
@@ -63,16 +64,19 @@
             margin-bottom: 10px;
             border-bottom: 0.2px solid #e9e3e3;
         }
-        
         .content .header-info .info div {
-            margin: 0 5px;
+            margin: 0 10px;
         }
         .content .header-info .info h1 {
             margin: 0;
             font-size: 24px;
+            color: #999696;
+            font-weight: 700;
         }
         .content .header-info .info p {
             margin: 0;
+            font-size: 18px;
+            color: #bdb9b9;
         }
         .content .header-info .button-wrapper {
             margin-left: auto; /* Đẩy nút sang bên phải */
@@ -106,6 +110,37 @@
         .button:hover {
             background-color: #b00;
         }
+        
+        /* Media query cho màn hình nhỏ */
+        @media (max-width: 600px) {
+            .header img {
+                height: 60px; /* Giảm kích thước logo cho màn hình nhỏ */
+            }
+            
+            .content {
+                width: 100%;
+                padding: 10px; /* Giảm padding cho màn hình nhỏ */
+            }
+            
+            .content .header-info .avatar {
+                width: 80px;
+                height: 80px;
+            }
+
+            .content .header-info .info {
+                flex-direction: column; /* Đảm bảo các phần tử xếp chồng lên nhau */
+                align-items: center;
+                text-align: center;
+            }
+
+            .content .header-info .info h1 {
+                font-size: 90px; /* Giảm kích thước chữ cho tiêu đề */
+            }
+
+            .content .header-info .info p {
+                font-size: 16px; /* Giảm kích thước chữ cho MSSV */
+            }
+        }
     </style>
 </head>
 <body>
@@ -119,26 +154,23 @@
             <div class="avatar"></div>
             <div class="info">
                 <div class="text-info">
-                    <h1 style="font-size: 30px; font-weight: 700; color: #999696;">Nguyễn Lê Nhất Sinh</h1>
+                    <h1 style="font-size: 35px;">Nguyễn Lê Nhất Sinh</h1>
                 </div>
-                <p style="font-size: 25px; font-weight: 50; color: #bdb9b9;">MSSV: 207TC47074</p>
+                <p>MSSV: 207TC47074</p>
                 <div class="button-wrapper">
                     <a href="#" class="button">Quay lại trang tra cứu</a>
                 </div>
             </div>
         </div>
         <div class="info">
-            <div style="color:#bdb9b9;"><span style="color:#bdb9b9;">Ngày sinh:</span> 04/25/2000</div>
-            <div style="color:#8f8d8d; font-weight: 700;"><span style="color:#bdb9b9; font-weight: 100;">Giới tính:</span> Nữ</div>
-
-            <div style="color:#8f8d8d; font-weight: 700;"><span style="color:#bdb9b9; font-weight: 100;">Ngành:</span> Tài Chính - Ngân Hàng</div>
-            <div style="color:#8f8d8d; font-weight: 700;"><span style="color:#bdb9b9; font-weight: 100;">Xếp loại tốt nghiệp:</span> Khá</div>
-
-            <div style="color:#8f8d8d; font-weight: 700;"><span style="color:#bdb9b9; font-weight: 100;">Số văn bằng:</span> VL-6BA003573</div>
-            <div style="color:#8f8d8d; font-weight: 700;"><span style="color:#bdb9b9; font-weight: 100;">Số vào sổ gốc cấp văn bằng:</span> 6B.03410.24</div>
-
-            <div style="color:#8f8d8d; font-weight: 700;"><span style="color:#bdb9b9; font-weight: 100;">Quyết định:</span> 1109/QĐ-DHVL-ĐT</div>
-            <div style="color:#8f8d8d; font-weight: 700;"><span style="color:#bdb9b9; font-weight: 100;">Ngày ký:</span> 14/7/2024</div>
+            <div style="color:#bdb9b9;"><span>Ngày sinh:</span> 25/04/2000</div>
+            <div style="color:#8f8d8d; font-weight: 700;"><span style="color:#8f8d8d; font-weight: 100;">Giới tính:</span> Nam</div>
+            <div style="color:#8f8d8d; font-weight: 700;"><span style="color:#8f8d8d; font-weight: 100;">Ngành:</span> Tài Chính - Ngân Hàng</div>
+            <div style="color:#8f8d8d; font-weight: 700;"><span style="color:#8f8d8d; font-weight: 100;">Xếp loại tốt nghiệp:</span> Khá</div>
+            <div style="color:#8f8d8d; font-weight: 700;"><span style="color:#8f8d8d; font-weight: 100;">Số văn bằng:</span> VL-6BA003573</div>
+            <div style="color:#8f8d8d; font-weight: 700;"><span style="color:#8f8d8d; font-weight: 100;">Số vào sổ gốc cấp văn bằng:</span> 6B.03410.24</div>
+            <div style="color:#8f8d8d; font-weight: 700;"><span style="color:#8f8d8d; font-weight: 100;">Quyết định:</span> 1109/QĐ-DHVL-ĐT</div>
+            <div style="color:#8f8d8d; font-weight: 700;"><span style="color:#8f8d8d; font-weight: 100;">Ngày ký:</span> 14/7/2024</div>
         </div>
     </div>
 
