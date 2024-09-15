@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="logo%20van%20lang.png"/>
-
+    <link rel="shortcut icon" type="image/png" href="/logo van lang.png"/>
     <title>Tra cứu văn bằng - VLU</title>
     <style>
         body {
@@ -19,7 +18,7 @@
         }
 
         .header {
-            background-color: #22285B;
+            background-color: #1F2251;
             color: white;
             display: flex;
             align-items: center;
@@ -35,7 +34,7 @@
             bottom: 0; /* Đưa footer xuống dưới cùng */
             left: 0; /* Đưa footer sang bên trái */
             right: 0; /* Đưa footer sang bên phải */
-            background-color: #22285B; /* Màu nền của footer */
+            background-color: #1F2251; /* Màu nền của footer */
             color: white; /* Màu chữ của footer */
             text-align: center; /* Canh giữa nội dung trong footer */
             padding: 20px; /* Khoảng cách trong footer */
@@ -90,7 +89,8 @@
             .menu-icon {
                 display: block; /* Hiển thị icon menu trên điện thoại */
                 position: absolute;
-                left: 350px; /* Đặt icon menu ở góc phải */
+                font-size: 5px;
+                left: 330px; /* Đặt icon menu ở góc phải */
             }
 
             .logo {
@@ -103,19 +103,28 @@
             }
 
             .footer {
-        padding: 5px; /* Giảm padding cho màn hình nhỏ */
-        text-align: center; /* Căn giữa nội dung footer */
-        font-size: 12px; /* Giảm kích thước chữ cho màn hình nhỏ */
-        max-width: 100%; /* Đảm bảo footer không vượt quá chiều rộng màn hình */
-        position: fixed; /* Đặt footer ở vị trí cố định */
-        bottom: 0; /* Đưa footer xuống dưới cùng */
-        left: 0; /* Đưa footer sang bên trái */
-    }
+                padding: 5px; /* Giảm padding cho màn hình nhỏ */
+                text-align: center; /* Căn giữa nội dung footer */
+                font-size: 12px; /* Giảm kích thước chữ cho màn hình nhỏ */
+                max-width: 100%; /* Đảm bảo footer không vượt quá chiều rộng màn hình */
+                position: fixed; /* Đặt footer ở vị trí cố định */
+                bottom: 0; /* Đưa footer xuống dưới cùng */
+                left: 0; /* Đưa footer sang bên trái */
+            }
 
-    .footer p {
-        margin: 0; /* Xóa margin để footer không bị nhô ra ngoài */
-        padding: 0; /* Xóa padding cho paragraph */
-    }
+            .footer p {
+                margin: 2px; /* Xóa margin để footer không bị nhô ra ngoài */
+                padding: 2px;
+                text-align: justify;
+            }
+            
+            .content .header-info .avatar {
+                width: 60px; /* Kích thước nhỏ hơn cho điện thoại */
+                height: 60px; /* Kích thước nhỏ hơn cho điện thoại */
+                margin-right: 0; /* Đặt margin-right về 0 để không bị dồn ra ngoài */
+                margin-left: auto; /* Căn giữa avatar */
+                margin-right: auto; /* Căn giữa avatar */
+            }
         }
         .content {
             background-color: white;
@@ -138,14 +147,14 @@
             margin-bottom: 20px;
         }
         .content .header-info .avatar {
-            width: 100px;
-            height: 100px;
+            width: 100px; /* Kích thước cho màn hình lớn */
+            height: 100px; /* Kích thước cho màn hình lớn */
             background-color: #f0f0f0;
             border-radius: 50%;
             border: 2px solid #ddd;
             margin-bottom: 20px; /* Khoảng cách giữa avatar và thông tin */
-            margin-right: 650px; 
-        }
+            margin-right: 650px; /* Điều này có thể gây ra vấn đề trên màn hình nhỏ */
+}
         .content .header-info .info {
             display: flex;
             align-items: center;
@@ -206,11 +215,6 @@
                 padding: 10px; /* Giảm padding cho màn hình nhỏ */
             }
             
-            .content .header-info .avatar {
-                width: 80px;
-                height: 80px;
-            }
-
             .content .header-info .info {
                 flex-direction: column; /* Đảm bảo các phần tử xếp chồng lên nhau */
                 align-items: center;
@@ -233,6 +237,14 @@
                 }
         }
 
+
+        
+        .menu-image {
+            width: 50px; /* Kích thước chiều rộng của hình ảnh */
+            height: 50px; /* Kích thước chiều cao của hình ảnh, điều chỉnh về 20px */
+        }
+
+
     </style>
 </head>
 <body>
@@ -251,8 +263,10 @@
                     <li><a href="#">MẪU VĂN BẰNG THẠC SĨ</a></li>
                 </ul>
             </nav>
-            <div class="menu-icon" onclick="toggleMenu()">
-                <span>&#9776;</span>
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <span class="image-container">
+                        <img src="iconaaaa.jpg" alt="Menu" class="menu-image">
+                    </span>
             </div>
         </header>
     </div>
@@ -283,18 +297,18 @@
     </div>
 
     <div class="footer">
-        <footer style="background-color: #22285B; padding: 20px; text-align: center;">
-            <div style="display: flex; flex-wrap: wrap; justify-content: space-around; margin-bottom: 10px;">
-                <div style="text-align: left; font-size: 13px;">
-                    <p><strong>Cơ sở chính:</strong> 69/68 Đặng Thuỳ Trâm, P. 13, Q. Bình Thạnh, TP.HCM</p>
-                    <p><strong>Cơ sở 1:</strong> 45 Nguyễn Khắc Nhu, P. Cô Giang, Q.1, TP. HCM</p>
-                    <p><strong>Cơ sở 2:</strong> 233A Phan Văn Trị, P.11, Q. Bình Thạnh, TP. HCM</p>
-                    <p><strong>Ký túc xá:</strong> 160/63A-8, Phan Huy Ích, P.12, Q. Gò Vấp, TP. HCM</p>
+        <footer style=" padding: 20px; text-align: center;">
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-around; margin-bottom: 10px; gap: 10px;">
+                <div style="text-align: left; font-size: 13px; " >
+                    <p style="gap: 10px; color: #cfcccc;"><strong style="color: #f7f6f6;">Cơ sở chính:</strong> 69/68 Đặng Thuỳ Trâm, P. 13, Q. Bình Thạnh, TP.HCM</p>
+                    <p  style="gap: 10px; color: #cfcccc;" ><strong style="color: #ddd;">Cơ sở 1:</strong> 45 Nguyễn Khắc Nhu, P. Cô Giang, Q.1, TP. HCM</p>
+                    <p  style="gap: 10px; color: #cfcccc;" ><strong style="color: #ddd;">Cơ sở 2:</strong> 233A Phan Văn Trị, P.11, Q. Bình Thạnh, TP. HCM</p>
+                    <p  style="gap: 10px; color: #cfcccc;" ><strong style="color: #ddd;">Ký túc xá:</strong> 160/63A-8, Phan Huy Ích, P.12, Q. Gò Vấp, TP. HCM</p>
                 </div>
                 <div style="text-align: right; font-size: 13px;">
-                    <p>Trang thông tin điện tử tổng hợp Trường Đại học Văn Lang. Hoạt động theo giấy phép số 75/GP-ICP-STTTT </p>
-                    <p>Phát triển bởi Phòng CNTT - Trường ĐH Văn Lang - Version: 20</p>
-                    <p>Tổng biên tập: Hiệu trưởng</p>
+                    <p  style="gap: 10px; color: #cfcccc;">Trang thông tin điện tử tổng hợp Trường Đại học Văn Lang. Hoạt động theo giấy phép số 75/GP-ICP-STTTT </p>
+                    <p  style="gap: 10px; color: #cfcccc;">Phát triển bởi Phòng CNTT - Trường ĐH Văn Lang - Version: 20</p>
+                    <p  style="gap: 10px; color: #cfcccc;">Tổng biên tập: Hiệu trưởng</p>
                 </div>
             </div>
         </footer>
