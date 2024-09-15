@@ -11,7 +11,10 @@
             background-color: white;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            display: flex;
+            flex-direction: column; /* Sắp xếp theo cột */
+            min-height: 100vh;
+            
         }
 
         .header {
@@ -26,6 +29,16 @@
             margin: 0 auto; /* Đưa header ra giữa */
             height: 60px;
         }
+        .footer {
+            position: fixed; /* Đặt footer ở vị trí cố định */
+            bottom: 0; /* Đưa footer xuống dưới cùng */
+            left: 0; /* Đưa footer sang bên trái */
+            right: 0; /* Đưa footer sang bên phải */
+            background-color: #22285B; /* Màu nền của footer */
+            color: white; /* Màu chữ của footer */
+            text-align: center; /* Canh giữa nội dung trong footer */
+            padding: 20px; /* Khoảng cách trong footer */
+            }
 
         .logo img {
             height: 50px;
@@ -49,7 +62,7 @@
         }
 
         .navbar ul li a:hover {
-            background-color: #444b72;
+            background-color: #22285B;
             border-radius: 5px;
         }
 
@@ -88,12 +101,12 @@
                 padding: 20px; /* Giảm padding cho hợp lý trên màn hình nhỏ */
             }
 
-            footer div {
-            flex: 100%; /* Chuyển các div thành một cột */
-            text-align: left;
-            text-align: center;
-            
-        }
+            .footer {
+            padding: 10px; /* Giảm padding cho màn hình nhỏ */
+            }
+            .footer p {
+                font-size: 12px; /* Giảm kích thước chữ cho màn hình nhỏ */
+            }
         }
         .content {
             background-color: white;
@@ -157,15 +170,7 @@
             width: 100%;
             max-width: 800px;
         }
-        .footer {
-            background-color: #312a58;
-            color: white;
-            text-align: center;
-            width: 100%;
-            position: fixed;
-            left: 0;
-            bottom: 0;
-        }
+        
         .button {
             background-color: #e00;
             color: white;
@@ -209,9 +214,15 @@
             .content .header-info .info p {
                 font-size: 16px; /* Giảm kích thước chữ cho MSSV */
             }
-
-            
+            #menu {
+                    display: none; /* Ẩn menu mặc định */
+                }
+    
+                #menu.active {
+                    display: block; /* Hiển thị menu khi có lớp active */
+                }
         }
+
     </style>
 </head>
 <body>
@@ -277,19 +288,14 @@
                 </div>
             </div>
         </footer>
-        
-        
     </div>
 
     <script>
         function toggleMenu() {
             var menu = document.getElementById('menu');
-            if (menu.style.display === 'block') {
-                menu.style.display = 'none';
-            } else {
-                menu.style.display = 'block';
-            }
+            menu.classList.toggle('active'); // Thay đổi lớp CSS của menu
         }
     </script>
+    
 </body>
 </html>
