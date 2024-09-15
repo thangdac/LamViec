@@ -102,11 +102,19 @@
             }
 
             .footer {
-            padding: 10px; /* Giảm padding cho màn hình nhỏ */
-            }
-            .footer p {
-                font-size: 12px; /* Giảm kích thước chữ cho màn hình nhỏ */
-            }
+        padding: 5px; /* Giảm padding cho màn hình nhỏ */
+        text-align: center; /* Căn giữa nội dung footer */
+        font-size: 12px; /* Giảm kích thước chữ cho màn hình nhỏ */
+        max-width: 100%; /* Đảm bảo footer không vượt quá chiều rộng màn hình */
+        position: fixed; /* Đặt footer ở vị trí cố định */
+        bottom: 0; /* Đưa footer xuống dưới cùng */
+        left: 0; /* Đưa footer sang bên trái */
+    }
+
+    .footer p {
+        margin: 0; /* Xóa margin để footer không bị nhô ra ngoài */
+        padding: 0; /* Xóa padding cho paragraph */
+    }
         }
         .content {
             background-color: white;
